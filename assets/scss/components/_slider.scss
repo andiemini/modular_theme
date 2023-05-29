@@ -1,0 +1,34 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.slide {
+    padding: 30px 0;
+    margin: 30px 0;
+}
+
+.swiper-pagination {
+    margin-top: 20px;
+    
+    .swiper-pagination-bullet {
+        width: 80px;
+        border-radius: 20px;
+        height: 4px;
+    }
+
+    .swiper-pagination-bullet-active {
+        height: 8px;
+        background: #aadaba;
+    }
+}

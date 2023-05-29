@@ -1,0 +1,53 @@
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  .card {
+    width: 310px;
+    box-shadow: 0 5px 7px #e0e5e8;
+    cursor: pointer;
+    margin: 12px 0;
+
+    @include media(md) {
+      margin: 0 16px 0 0;
+    }
+    &__link {
+      &__image {
+        width: 310px;
+        height: 210px;
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      margin: 10px 0;
+      padding: 0 12px;
+      &__type {
+        font-size: 14px;
+        line-height: 14px;
+        color: #333;
+        text-transform: capitalize;
+      }
+
+      &__title {
+        font-size: 20px;
+        line-height: 18px;
+        color: #333;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 12px 0;
+        text-transform: capitalize;
+      }
+
+      &__location {
+        font-size: 14px;
+        line-height: 16px;
+        color: #999;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
